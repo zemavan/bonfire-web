@@ -2,6 +2,10 @@ from fastapi import APIRouter
 
 route = APIRouter()
 
-@route.get("/one")
+@route.get("/two")
 def greetings():
-    return "hello"
+    return "two"
+
+@route.get("/")
+def greetings():
+    return "one"   
